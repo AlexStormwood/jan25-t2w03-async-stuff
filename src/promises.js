@@ -2,7 +2,9 @@
 function getPokemon(){
 	// Make a web request to the Pokemon API 
 	// Save the response from the API 
-	let response = fetch("https://nonexistenturlforcoderclass.co/api/v2/pokemon/25")
+
+	// fetch & then is ASYNC NON-BLOCKING 
+	let response = fetch("https://pokeapi.co/api/v2/pokemon/25")
 	.then((bananasResponse) => {
 		console.log(bananasResponse);
 		return bananasResponse.json();
