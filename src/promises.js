@@ -11,8 +11,12 @@ function getPokemon(){
 		console.log(jsonData);
 
 		// Create HTML elements that use the response from the API 
+		let pokemonContainer = document.getElementById("pokemonDataContainer");
+		let pokemonNameHeader = document.createElement("h2");
+		pokemonNameHeader.innerText = jsonData.name;
 
 		// Add those HTML elements to the page 
+		pokemonContainer.appendChild(pokemonNameHeader);
 
 	});
 	console.log(response);
